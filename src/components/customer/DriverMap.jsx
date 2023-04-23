@@ -53,6 +53,16 @@ function CustomerMap() {
             longitude: {longitude},
             person name: {person},
             Location: {place}
+            <br/>
+            <br/>
+            <div>
+                <button style={{padding: ".75rem 1.25rem"}}>Call</button>
+                &nbsp;
+                <button style={{padding: ".75rem 1.25rem"}}>Rent</button>
+                &nbsp;
+                <button style={{padding: ".75rem 1.25rem"}}>Pay</button> 
+            </div>
+            
         </div>
     )
 }

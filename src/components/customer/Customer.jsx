@@ -12,15 +12,15 @@ export const Customer = () => {
 
     const getCurrent = () => {
         const success = (position) => {
-            const lat = position.coords.latitude;
-            const long = position.coords.longitude;
+            const lat = 17.0894;
+            const long = 82.0668;
 
             const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${long}&localityLanguage=en`;
 
             fetch(geoApiUrl)
                 .then((res) => res.json())
                 .then((data) => {
-                    setCurrentLocation(data.city);
+                    setCurrentLocation(data.locality);
                     console.log(data);
                 });
         } 
